@@ -36,8 +36,7 @@ def get_yt_data():
                 dct = response.json()
                 channelName = dct['channel_title']
                 df = pd.DataFrame(dct['output'])
-                logging.info('Successfull Response from API 200')
-                response.close()
+                logging.info('Successfull Response from API 200')                
                 # Saving to pymongo
                 client = pymongo.MongoClient("mongodb+srv://gaikwadujg:xsljXpgLNpzaz4Te@cluster0.7chcxpg.mongodb.net/?retryWrites=true&w=majority")
                 db = client['yt_aws_scrapper']
@@ -47,17 +46,12 @@ def get_yt_data():
             else:
                 print('Error Occured Please check URL')
                 logging.info('Response not recieved from API')
-                response.close()
                 return 'Please check URL'
             
         except Exception as e:
             print('Exception Occured : ',e)
             logging.error(f'Error occured :{e}')
-            return f'Exception Occured : {e}'
-        
-        finally:
-            response.close()
-        
+            return f'Exception Occured : {e}'        
         
     else:
         return render_template('index.html') 
