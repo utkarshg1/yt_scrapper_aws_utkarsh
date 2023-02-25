@@ -51,7 +51,7 @@ def get_yt_data():
         except Exception as e:
             print('Exception Occured : ',e)
             logging.error(f'Error occured :{e}')
-            return 'Something is wrong'
+            return f'Exception Occured : {e}'
         
         
     else:
