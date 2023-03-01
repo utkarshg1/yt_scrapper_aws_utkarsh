@@ -1,6 +1,8 @@
-# yt_scrapper_aws Deployment by Utkarsh Gaikwad
+# YouTube Scraper Deployment on AWS by Utkarsh Gaikwad
 
 This is YouTube Scrapper headless Deployed on AWS by me - Utkarsh Gaikwad
+
+# YouTube Demo for this project : [https://youtu.be/X-7ZvUQZiYQ](https://youtu.be/X-7ZvUQZiYQ)
 
 # AWS Elastic Beanstalk Link
 
@@ -13,6 +15,8 @@ API URL : [https://8rkvysfczg.execute-api.us-east-1.amazonaws.com/yt_scrapper_ut
 GitHub Repo for my API : [https://github.com/utkarshg1/yt_scrapper_lambda_utkarsh](https://github.com/utkarshg1/yt_scrapper_lambda_utkarsh)
 
 Note that above url is a POST request URL only. Documentiaton for API inside the above github Repository link 
+
+Logic Explaination Behind API Notebook : [Logic Explaination Jupyter Notebook for API](https://github.com/utkarshg1/PWSkills-Assignments/blob/main/Assignment%2021%20-%2022%20February%202023/Assignment21Utkarsh.ipynb)
 
 # WebApp UI Homepage
 
